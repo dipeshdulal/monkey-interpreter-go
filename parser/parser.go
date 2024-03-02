@@ -95,7 +95,7 @@ func (p *Parser) parseLetStatement() *ast.LetStatement {
 		return nil
 	}
 
-	// TODO: skip semicolons
+	// TODO: skip until semicolons, expression parsing not implemented
 	if !p.curTokenIs(token.SEMICOLON) {
 		p.nextToken()
 	}
